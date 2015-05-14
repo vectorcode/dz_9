@@ -1,0 +1,37 @@
+.title
+            span.title__text Популярные товары
+
+          mixin goods(link, src, name)
+            li.goods__item
+              a.goods__item__link(href="http://#{link}", target="_blank") 
+                .goods__item__head
+                  img.goods__item__img(src="img/tovar/#{src}", alt="")
+                  .goods__item__title #{name}
+                .goods__item_info
+                  .goods__item_info-lb Артикул
+                  .goods__item_info-dt 5654565
+                .goods__item_info
+                  .goods__item_info-lb Опция
+                  .goods__item_info-dt включена
+                .goods__item_info
+                  .goods__item_info-lb Цвет
+                  .goods__item_info-dt серебристый
+                .goods__item_info
+                  .goods__item_info-lb Размер
+                  .goods__item_info-dt 1280*1245*90
+                .goods__item_info
+                  .goods__item_info-lb Вес
+                  .goods__item_info-dt 9 кг
+                         
+          ul.goods
+            +goods('#','tovar-1.jpg', 'Apple Thunderb Display 27"')
+            +goods('#','tovar-2.jpg', 'iMac 27"')
+            +goods('#','tovar-3.jpg', 'iPhone 5s Gold')
+
+          .title
+            span.title__text Товары со скидкой
+
+          ul.goods
+            +goods('#','tovar-4.jpg', 'iPad Air Wi-Fi 128GB - Silver')
+            +goods('#','tovar-5.jpg', 'Apple iPod nano 7G 16 ГБ Blue')
+            +goods('#','tovar-6.jpg', 'Роутер Wi-Fi Apple AirPort')

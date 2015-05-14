@@ -4,16 +4,15 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Главная страница </title>
-    <meta name="description" content="loftschool_homework">
-    <meta name="keywords" content="loftschool_homework">
-    <meta name="author" content="Gomer Simpson">
+    <title>ЭпплShop</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <!-- build:css css/vendor.min.css -->
     <!-- bower:css-->
     <link rel="stylesheet" href="/bower/normalize.css/normalize.css">
-    <link rel="stylesheet" href="/bower/qtip2/jquery.qtip.css">
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css fonts/fonts.min.css -->
@@ -21,13 +20,7 @@
     <link rel="stylesheet" href="fonts/proximanovacond-semibold.css">
     <!-- endbuild -->
     <!-- build:css css/main.min.css -->
-    <link rel="stylesheet" href="css/about_me_page.css">
-    <link rel="stylesheet" href="css/my_work_page.css">
-    <link rel="stylesheet" href="css/contact_me.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/modal.css">
-    <link rel="stylesheet" href="css/form_elements.css">
-    <link rel="stylesheet" href="css/login.css">
     <!-- endbuild -->
     <!-- build:js js/modernizr.min.js -->
     <script src="bower/modernizer/modernizr.js"></script>
@@ -38,131 +31,332 @@
     <!--[if lt IE 7]>
 <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите</a> его.</p>
 <![endif]-->
-    <div class="wrapper">
-      <div class="main-content">
-        <header class="page-header">
-          <div class="container-big">
-            <a class="header-logo-link"><img src="img/logo.png" alt="logo" class="logo-img"><span class="header-logo-text">Сайт портфолио</span></a>
-            <ul class="socials">
-              <li class="socials-item">
-                <a href="" target="_blank" class="socials-link vk"></a>
-              </li>
-              <li class="socials-item">
-                <a href="" target="_blank" class="socials-link tw"></a>
-              </li>
-              <li class="socials-item">
-                <a href="" target="_blank" class="socials-link fb"></a>
-              </li>
-              <li class="socials-item">
-                <a href="" target="_blank" class="socials-link gt"></a>
-              </li>
-            </ul>
-          </div>
-        </header>
-        <div class="container">
-          <aside class="sidebar">
-            <nav class="navigation">
-              <ul class="navigation-list">
-                <li class="navigation-item current"><a href="/" class="navigation-link">Обо мне</a></li>
-                <li class="navigation-item"><a href="/my-work.html" class="navigation-link">Мои работы</a></li>
-                <li class="navigation-item"><a href="/contact-me.html" class="navigation-link">Связаться со мной</a></li>
-              </ul>
-            </nav><address class="contacts"><div class="contacts-header"><span class="header-inner-text">Контакты</span></div><ul class="contacts-list"><li class="contacts-item contacts-item-mail"><a href="" class="contacts-link"><span class="contact-text">mail@gmail.com</span></a></li><li class="contacts-item contacts-item-phone"><a href="" class="contacts-link"><span class="contact-text">+8989898989</span></a></li><li class="contacts-item contacts-item-skype"><a href="" class="contacts-link"><span class="contact-text">skype_gomer</span></a></li></ul></address></aside>
-          <div
-          class="variable-content">
-            <section class="aboutbox">
-              <h2 class="aboutbox-header">Основная информация</h2>
-              <div class="aboutbox-body clearfix">
-                <div class="image-wrap">
-                  <div class="avatar-box"><img src="img/face.png" alt="Гомер Симпсон" class="avatar"></div>
-                </div>
-                <div class="worksheet-wrap">
-                  <ul class="worksheet-list">
-                    <li class="worksheet-item clearfix">
-                      <div class="worksheet-what">Меня зовут:</div>
-                      <div class="worksheet-info">Гомер Симпсон</div>
-                    </li>
-                    <li class="worksheet-item clearfix">
-                      <div class="worksheet-what">Мой возраст:</div>
-                      <div class="worksheet-info">40 лет</div>
-                    </li>
-                    <li class="worksheet-item clearfix">
-                      <div class="worksheet-what">Мой город:</div>
-                      <div class="worksheet-info">Санкт Петербург, Россия</div>
-                    </li>
-                    <li class="worksheet-item clearfix">
-                      <div class="worksheet-what">Моя специализация:</div>
-                      <div class="worksheet-info">FRONTEND разработчик</div>
-                    </li>
-                    <div class="worksheet-item clearfix">
-                      <div class="worksheet-what">Ключевые навыки:</div>
-                      <div class="worksheet-info skills">
-                        <ul class="skills-list">
-                          <li class="skill-item">html</li>
-                          <li class="skill-item">css</li>
-                          <li class="skill-item">javascript</li>
-                          <li class="skill-item">gulp</li>
-                          <li class="skill-item">git</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </ul>
-                </div>
-              </div>
-            </section>
-            <section class="aboutbox">
-              <h2 class="aboutbox-header">Опыт работы</h2>
-              <div class="aboutbox-body">
-                <ul class="aboutbox-list">
-                  <li class="aboutbox-item icon-work">
-                    <div class="where">"ИП Боровицкий" - Продавец дисков</div>
-                    <div class="period">Сентябрь 2005 - Август 2008</div>
-                  </li>
-                  <li class="aboutbox-item icon-work">
-                    <div class="where">"ООО Системы безопастности" - Системный администратор</div>
-                    <div class="period">Июнь 2008 - Июль 2010</div>
-                  </li>
-                </ul>
-              </div>
-            </section>
-            <section class="aboutbox">
-              <h2 class="aboutbox-header">Опыт работы</h2>
-              <div class="aboutbox-body">
-                <ul class="aboutbox-list">
-                  <li class="aboutbox-item icon-college">
-                    <div class="where">Незаконченное высшее. СПБНИУ ИТМО</div>
-                    <div class="period">ктябрь 2012 - по настоящее время</div>
-                  </li>
-                  <li class="aboutbox-item icon-course">
-                    <div class="where">Курсы Loftschool</div>
-                    <div class="period">Ноябрь 2014 - по настоящее время</div>
-                  </li>
-                </ul>
-              </div>
-            </section>
+    <div class="main">
+      <div class="wrapper">
+        <aside class="sitebar"></aside>
+        <div class="logo">
+          <a class="logo__link"><img src="img/logo.png" alt="Эппл Shop" class="logo__img">
+            <div class="logo__text">ЭпплShop</div>
+          </a>
         </div>
+        <div class="form">
+          <form class="form__call">
+            <div class="form__item">
+              <lable for="name" class="form__item__lable">Ваше имя</lable>
+              <input type="text" placeholder="Константин" name="name" class="form__item__inp">
+            </div>
+            <div class="form__item">
+              <lable for="tel" class="form__item__lable">Телефон</lable>
+              <input type="text" placeholder="+7 (912) 000-00-00" name="tel" class="form__item__inp">
+            </div>
+            <div class="form__item date">
+              <lable class="form__item__lable">Дата звонка</lable>
+              <select name="day" class="form__item__select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+              </select>
+              <select name="month" class="form__item__select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+            </div>
+            <div class="form__item">
+              <textarea name="text" placeholder="Введите текст" class="form__item__texar"></textarea>
+            </div>
+            <div class="form__item btn">
+              <button type="submit" class="form__item__btn">Отправить</button>
+              <button type="clear" class="form__item__btn clear">Очистить</button>
+            </div>
+          </form>
+        </div>
+        <div class="gallery">
+          <ul class="gallery__blk">
+            <li class="gallery__item">
+              <a href="#" target="_blank" class="blk__gal__link"><img src="img/gall/gal-1.png" alt="" class="blk__gal__img"></a>
+            </li>
+            <li class="gallery__item">
+              <a href="#" target="_blank" class="blk__gal__link"><img src="img/gall/gal-2.png" alt="" class="blk__gal__img"></a>
+            </li>
+            <li class="gallery__item">
+              <a href="#" target="_blank" class="blk__gal__link"><img src="img/gall/gal-3.png" alt="" class="blk__gal__img"></a>
+            </li>
+            <li class="gallery__item">
+              <a href="#" target="_blank" class="blk__gal__link"><img src="img/gall/gal-4.png" alt="" class="blk__gal__img"></a>
+            </li>
+            <li class="gallery__item">
+              <a href="#" target="_blank" class="blk__gal__link"><img src="img/gall/gal-5.png" alt="" class="blk__gal__img"></a>
+            </li>
+            <li class="gallery__item">
+              <a href="#" target="_blank" class="blk__gal__link"><img src="img/gall/gal-6.png" alt="" class="blk__gal__img"></a>
+            </li>
+            <li class="gallery__item">
+              <a href="#" target="_blank" class="blk__gal__link"><img src="img/gall/gal-7.png" alt="" class="blk__gal__img"></a>
+            </li>
+            <li class="gallery__item">
+              <a href="#" target="_blank" class="blk__gal__link"><img src="img/gall/gal-8.png" alt="" class="blk__gal__img"></a>
+            </li>
+            <li class="gallery__item">
+              <a href="#" target="_blank" class="blk__gal__link"><img src="img/gall/gal-9.png" alt="" class="blk__gal__img"></a>
+            </li>
+          </ul>
+        </div>
+        <ul class="contacts">
+          <li class="contacts__item"><span class="contacts__item-link map">г. Москва, ул. Новая 246, офис 214.</span></li>
+          <li href="tel:+79213221232" class="contacts__item-link tel">+7(921) 322-12-32</li>
+        </ul>
+        <article class="content"></article>
+        <div class="slider">
+          <ul class="slider-blk">
+            <li class="slider__item"><img src="img/slider/slide-1.jpg" alt="iMac за пол цены" class="slider__item-img">
+              <div class="slider__info"><a href="#" class="slider__info-title">iMac за пол цены<div class="slider__info-content">Принеси свой старый Mac и получи скидку на новый!</div></a></div>
+            </li>
+            <li class="slider__item"><img src="img/slider/slide-2.jpg" alt="Конкурс на концепт IPhone 7" class="slider__item-img">
+              <div class="slider__info"><a href="#" class="slider__info-title">Конкурс на концепт IPhone 7<div class="slider__info-content">Выйграй iPad Air за самый необычный и интересный дизайн нового iPhone 7.</div></a></div>
+            </li>
+            <li class="slider__item"><img src="img/slider/slide-3.jpg" alt="До 31 декабря, iPhone 4 за 9900 руб." class="slider__item-img">
+              <div class="slider__info"><a href="#" class="slider__info-title">До 31 декабря, iPhone 4 за 9900 руб.<div class="slider__info-content">Нет денег на шестой iPhone? Купи себе четвертый!</div></a></div>
+            </li>
+          </ul>
+          <div class="slider__btns"><a href="#" class="slider__btn slider__btn-prev">Пред.</a><a href="#" class="slider__btn slider__btn-next">След.</a></div>
+        </div>
+        <div class="title"><span class="title__text">Популярные товары</span></div>
+        <ul class="goods">
+          <li class="goods__item">
+            <a href="http://#" target="_blank" class="goods__item__link">
+              <div class="goods__item__head"><img src="img/tovar/tovar-1.jpg" alt="" class="goods__item__img">
+                <div class="goods__item__title">Apple Thunderb Display 27&quot;</div>
+              </div>
+              <div class="goods__item_info">
+                <div class="goods__item_info-lb">Артикул</div>
+                <div class="goods__item_info-dt">5654565</div>
+              </div>
+              <div class="goods__item_info">
+                <div class="goods__item_info-lb">Опция</div>
+                <div class="goods__item_info-dt">включена</div>
+              </div>
+              <div class="goods__item_info">
+                <div class="goods__item_info-lb">Цвет</div>
+                <div class="goods__item_info-dt">серебристый</div>
+              </div>
+              <div class="goods__item_info">
+                <div class="goods__item_info-lb">Размер</div>
+                <div class="goods__item_info-dt">1280*1245*90</div>
+              </div>
+              <div class="goods__item_info">
+                <div class="goods__item_info-lb">Вес</div>
+                <div class="goods__item_info-dt">9 кг</div>
+              </div>
+            </a>
+          </li>
+          <li class="goods__item">
+            <a href="http://#" target="_blank" class="goods__item__link">
+              <div class="goods__item__head"><img src="img/tovar/tovar-2.jpg" alt="" class="goods__item__img">
+                <div class="goods__item__title">iMac 27&quot;</div>
+              </div>
+              <div class="goods__item_info">
+                <div class="goods__item_info-lb">Артикул</div>
+                <div class="goods__item_info-dt">5654565</div>
+              </div>
+              <div class="goods__item_info">
+                <div class="goods__item_info-lb">Опция</div>
+                <div class="goods__item_info-dt">включена</div>
+              </div>
+              <div class="goods__item_info">
+                <div class="goods__item_info-lb">Цвет</div>
+                <div class="goods__item_info-dt">серебристый</div>
+              </div>
+              <div class="goods__item_info">
+                <div class="goods__item_info-lb">Размер</div>
+                <div class="goods__item_info-dt">1280*1245*90</div>
+              </div>
+              <div class="goods__item_info">
+                <div class="goods__item_info-lb">Вес</div>
+                <div class="goods__item_info-dt">9 кг</div>
+              </div>
+            </a>
+          </li>
+          <li class="goods__item">
+            <a href="http://#" target="_blank" class="goods__item__link">
+              <div class="goods__item__head"><img src="img/tovar/tovar-3.jpg" alt="" class="goods__item__img">
+                <div class="goods__item__title">iPhone 5s Gold</div>
+              </div>
+              <div class="goods__item_info">
+                <div class="goods__item_info-lb">Артикул</div>
+                <div class="goods__item_info-dt">5654565</div>
+              </div>
+              <div class="goods__item_info">
+                <div class="goods__item_info-lb">Опция</div>
+                <div class="goods__item_info-dt">включена</div>
+              </div>
+              <div class="goods__item_info">
+                <div class="goods__item_info-lb">Цвет</div>
+                <div class="goods__item_info-dt">серебристый</div>
+              </div>
+              <div class="goods__item_info">
+                <div class="goods__item_info-lb">Размер</div>
+                <div class="goods__item_info-dt">1280*1245*90</div>
+              </div>
+              <div class="goods__item_info">
+                <div class="goods__item_info-lb">Вес</div>
+                <div class="goods__item_info-dt">9 кг</div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="title"><span class="title__text">Товары со скидкой</span></div>
+        <ul class="goods">
+          <li class="goods__item">
+            <a href="http://#" target="_blank" class="goods__item__link">
+              <div class="goods__item__head"><img src="img/tovar/tovar-4.jpg" alt="" class="goods__item__img">
+                <div class="goods__item__title">iPad Air Wi-Fi 128GB - Silver</div>
+              </div>
+              <div class="goods__item_info">
+                <div class="goods__item_info-lb">Артикул</div>
+                <div class="goods__item_info-dt">5654565</div>
+              </div>
+              <div class="goods__item_info">
+                <div class="goods__item_info-lb">Опция</div>
+                <div class="goods__item_info-dt">включена</div>
+              </div>
+              <div class="goods__item_info">
+                <div class="goods__item_info-lb">Цвет</div>
+                <div class="goods__item_info-dt">серебристый</div>
+              </div>
+              <div class="goods__item_info">
+                <div class="goods__item_info-lb">Размер</div>
+                <div class="goods__item_info-dt">1280*1245*90</div>
+              </div>
+              <div class="goods__item_info">
+                <div class="goods__item_info-lb">Вес</div>
+                <div class="goods__item_info-dt">9 кг</div>
+              </div>
+            </a>
+          </li>
+          <li class="goods__item">
+            <a href="http://#" target="_blank" class="goods__item__link">
+              <div class="goods__item__head"><img src="img/tovar/tovar-5.jpg" alt="" class="goods__item__img">
+                <div class="goods__item__title">Apple iPod nano 7G 16 ГБ Blue</div>
+              </div>
+              <div class="goods__item_info">
+                <div class="goods__item_info-lb">Артикул</div>
+                <div class="goods__item_info-dt">5654565</div>
+              </div>
+              <div class="goods__item_info">
+                <div class="goods__item_info-lb">Опция</div>
+                <div class="goods__item_info-dt">включена</div>
+              </div>
+              <div class="goods__item_info">
+                <div class="goods__item_info-lb">Цвет</div>
+                <div class="goods__item_info-dt">серебристый</div>
+              </div>
+              <div class="goods__item_info">
+                <div class="goods__item_info-lb">Размер</div>
+                <div class="goods__item_info-dt">1280*1245*90</div>
+              </div>
+              <div class="goods__item_info">
+                <div class="goods__item_info-lb">Вес</div>
+                <div class="goods__item_info-dt">9 кг</div>
+              </div>
+            </a>
+          </li>
+          <li class="goods__item">
+            <a href="http://#" target="_blank" class="goods__item__link">
+              <div class="goods__item__head"><img src="img/tovar/tovar-6.jpg" alt="" class="goods__item__img">
+                <div class="goods__item__title">Роутер Wi-Fi Apple AirPort</div>
+              </div>
+              <div class="goods__item_info">
+                <div class="goods__item_info-lb">Артикул</div>
+                <div class="goods__item_info-dt">5654565</div>
+              </div>
+              <div class="goods__item_info">
+                <div class="goods__item_info-lb">Опция</div>
+                <div class="goods__item_info-dt">включена</div>
+              </div>
+              <div class="goods__item_info">
+                <div class="goods__item_info-lb">Цвет</div>
+                <div class="goods__item_info-dt">серебристый</div>
+              </div>
+              <div class="goods__item_info">
+                <div class="goods__item_info-lb">Размер</div>
+                <div class="goods__item_info-dt">1280*1245*90</div>
+              </div>
+              <div class="goods__item_info">
+                <div class="goods__item_info-lb">Вес</div>
+                <div class="goods__item_info-dt">9 кг</div>
+              </div>
+            </a>
+          </li>
+        </ul>
       </div>
+      <!--footer-->
+      <footer class="footer">
+        <div class="wrapper">
+          <div class="fbl__left">
+            <a class="logo__link"><img src="img/logo-footer.png" alt="Эппл Shop" class="logo__img">
+              <div class="logo__text">ЭпплShop</div>
+            </a>
+          </div>
+          <div class="fbl__right">
+            <div class="links">
+              <div class="links__item">
+                <a href="http://#" target="_blank" class="links__item__link"><img src="img/ico_app.png" alt="AppStore" class="links__item__img"></a>
+                <a href="http://#" target="_blank" class="links__item__link"><img src="img/ico_gp.png" alt="Google Play" class="links__item__img"></a>
+              </div>
+              <div class="links__item">
+                <a href="http://#" target="_blank" class="links__item_soc vk"></a>
+                <a href="http://#" target="_blank" class="links__item_soc fb"></a>
+                <a href="http://#" target="_blank" class="links__item_soc tw"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-    </div>
-    <footer class="page-footer">
-      <div class="container">
-        <div class="lock"><a href="/login.html" class="lock-inner">Войти</a></div>
-        <div class="copyright">© 2015, Это сайт Гомера, пожалуйста, не копируйте и не воруйте его</div>
-      </div>
-    </footer>
     <!-- build:js js/vendor.js -->
     <!--bower:js-->
     <script src="/bower/jquery/dist/jquery.js"></script>
-    <script src="/bower/bpopup/jquery.bpopup.js"></script>
-    <script src="/bower/jquery-placeholder/jquery.placeholder.js"></script>
-    <script src="/bower/qtip2/jquery.qtip.js"></script>
     <!--endbower  -->
     <!-- endbuild -->
     <!-- build:js js/main.js -->
-    <script src="js/login.js"></script>
-    <script src="js/add_project.js"></script>
-    <script src="js/validation.js"></script>
-    <script src="js/contact_me.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <!-- endbuild -->

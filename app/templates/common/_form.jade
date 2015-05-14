@@ -1,0 +1,21 @@
+.form
+            form.form__call
+              .form__item
+                lable.form__item__lable(for="name") Ваше имя
+                input.form__item__inp(type="text", placeholder="Константин" name="name")
+              .form__item
+                lable.form__item__lable(for="tel") Телефон
+                input.form__item__inp(type="text", placeholder="+7 (912) 000-00-00" name="tel")
+              .form__item.date
+                lable.form__item__lable Дата звонка
+                select.form__item__select(name="day")
+                  - for (var x = 1; x <= 31; x++)
+                      option(value=x)= x
+                select.form__item__select(name="month")
+                  - for (var x = 1; x <= 12; x++)
+                      option(value=x)= x
+              .form__item
+                textarea.form__item__texar(name="text", placeholder="Введите текст")
+              .form__item.btn
+                button.form__item__btn(type="submit", ) Отправить
+                button.form__item__btn.clear(type="clear", ) Очистить

@@ -1,0 +1,11 @@
+mixin gall(href, img, alt)
+            li.gallery__item
+              a.blk__gal__link(href="#{href}", target="_blank")
+                img.blk__gal__img(src="img/#{img}", alt="#{alt}")
+
+          .gallery
+            ul.gallery__blk
+               - for (var x = 1; x <= 9; x++)
+                  li.gallery__item
+                    a.blk__gal__link(href="#", target="_blank")
+                      img.blk__gal__img(src="img/gall/gal-"+x+".png", alt="")
