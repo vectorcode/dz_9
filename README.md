@@ -1,8 +1,8 @@
-> front_prj - это база для развёртывания frontend проекта. Включает в себя, Gulp, Sass, Jade, минификацию и конканинацию файлов, deploy на боевой сервер
+> dz_9 - Gulp, Sass, Jade, минификация и конканинация файлов, deploy на боевой сервер
 
 Для запуска:
 
-0. git clone https://github.com/vectorcode/front_prj.git my_prj
+0. git clone https://github.com/vectorcode/dz_9.git dz_9_pavel_k
 1. npm i
 2. bower i
 3. gulp - Задача по-умолчанию ['server', 'watch']
