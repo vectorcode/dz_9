@@ -1,7 +1,7 @@
-footer.footer
+footer.footer.page-footer
         .wrapper
           .fbl__left
-            a.logo__link
+            a.logo__link(href="/")
               img.logo__img(src="img/logo-footer.png", alt="Эппл Shop")
               .logo__text ЭпплShop
           .fbl__right
@@ -12,6 +12,26 @@ footer.footer
                 a.links__item__link(href="http://#", target="_blank")
                   img.links__item__img(src="img/ico_gp.png", alt="Google Play")
               .links__item
-                a.links__item_soc.vk(href="http://#", target="_blank")
-                a.links__item_soc.fb(href="http://#", target="_blank")
-                a.links__item_soc.tw(href="http://#", target="_blank")
+                a.links__item__soc.vk(href="http://#", target="_blank")
+                a.links__item__soc.fb(href="http://#", target="_blank")
+                a.links__item__soc.tw(href="http://#", target="_blank")
+          .fbl__center
+            nav.footerlnks
+              .footerlnks__title  О магазине
+              ul.footerlnks__list
+                each item in ['О нас', 'Наши цены', 'Наши скидки', 'Акции']
+                  li.footerlnks__list__item
+                    a.footerlnks__list__link(href='#')=item
+            nav.footerlnks
+              .footerlnks__title  Каталог
+              ul.footerlnks__list
+                each item in ['Смартфоны', 'Планшеты', 'Компьютеры', 'Аксессуары']
+                  li.footerlnks__list__item
+                    a.footerlnks__list__link(href='#')=item
+            nav.footerlnks
+              .footerlnks__title  Конткакты
+              ul.footerlnks__list
+                each item in ['Телефоны', 'Адреса', 'Карта проезда', 'Обратная связь']
+                  li.footerlnks__list__item
+                    a.footerlnks__list__link(href='#')=item
+

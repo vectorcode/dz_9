@@ -1,16 +1,16 @@
 mixin slide(src, link, linktext, descr)
-  li.slider__item
-    img.slider__item-img(src='img/slider/#{src}', alt='#{linktext}')
-    .slider__info
-      a.slider__info-title(href= '#{link}') #{linktext}
-        .slider__info-content #{descr}
+  li.slider__blk__item
+    img.slider__blk__item-img(src='img/slider/#{src}', alt='#{linktext}')
+    .slider__blk__info
+      a.slider__blk__info-title(href= '#{link}') #{linktext}
+      .slider__blk__info-content #{descr}
 
 .slider
-  ul.slider-blk
+  ul.slider__blk
     +slide('slide-1.jpg', '#', 'iMac за пол цены', 'Принеси свой старый Mac и получи скидку на новый!' )
     +slide('slide-2.jpg', '#', 'Конкурс на концепт IPhone 7', 'Выйграй iPad Air за самый необычный и интересный дизайн нового iPhone 7.')
     +slide('slide-3.jpg', '#', 'До 31 декабря, iPhone 4 за 9900 руб.', 'Нет денег на шестой iPhone? Купи себе четвертый!')
 
-  .slider__btns
-    a.slider__btn.slider__btn-prev(href='#') Пред.
-    a.slider__btn.slider__btn-next(href='#') След.
+  .slider__btn
+    a.slider__btn__item.prev(href='#') Пред.
+    a.slider__btn__item.next(href='#') След.
