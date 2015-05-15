@@ -1,0 +1,180 @@
+/*===============content================*/
+.content{
+
+}
+.slider{
+	position:relative;
+	width:740px;
+	height:300px;
+	overflow: hidden;
+	margin-bottom: 40px;
+	&__blk{
+
+
+		&__item{
+			
+		}
+		&__info{
+			height: 75px;
+			background: rgba($sl-c-line, 0.55);
+			position:relative;
+			top: -80px;
+			padding: 15px 25px;
+			&-title{
+				font-size:$f-sz-a-sldr;
+				color:$c-bright-blue;
+				&:hover{
+					text-decoration: none;
+				}
+			}
+			&-content{
+				color:$c-white;
+			}
+		}
+	
+	}
+	&__btn{
+		&__item{
+			position: absolute;
+			top: 106px;
+			color:$c-bright-blue;
+			font-family:$font-el-b;
+			text-align:center;
+			text-decoration: none;
+			background: $c-white;
+			padding: 5px 10px;
+			
+			&:before{
+  				content:'';
+				border:14px solid transparent;
+				
+  				display: block;
+				position: absolute;
+				
+  			}
+  			
+			&:hover{
+				color:$c-white;
+				background: $c-bright-blue;
+			}
+
+			&.prev{
+				left: 30px;
+
+				&:before{
+					border-right-color: $c-white;
+					border-left: 0;
+					margin-left: -14px;
+  					top: 0;
+  					left:0;
+				}
+				&:hover{
+					&:before{
+						border-right-color: $c-bright-blue;
+					}
+				}
+				
+			}
+			&.next{
+				right: 30px;
+				&:before{
+					border-left-color: $c-white;  
+					border-right: 0;
+					margin-right: -14px;
+  					top: 0;
+  					right:0;
+				}
+				&:hover{
+					&:before{
+						border-left-color: $c-bright-blue;
+					}
+				}
+			}
+
+			
+
+		}
+	}
+
+}
+.title {
+	font: $f-sz-t $font-em-r;
+	text-align: center;
+	color: $c-blue;
+	overflow: hidden;
+	margin-bottom: 8px;
+
+	&__text {
+		min-width: 280px;
+		max-width: 500px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	&:before,
+	&:after {
+		content: '';
+		display: inline-block;
+		position: relative;
+		vertical-align: middle;
+		width: 50%;
+		left: 0;
+		border-bottom: 1px solid $c-blue;
+	}
+
+	&:after {
+		margin: 0 -50% 0 0;
+	}
+
+	&:before {
+		margin: 0 0 0 -50%;
+	}
+}
+
+.goods{
+	@extend .clearfix;
+	margin-left: -25px;
+	margin-bottom: 40px;
+	&__item{
+		width: 230px;
+		display: block;
+		border: 1px solid #dce2ec;
+		margin: 10px 0px 0px 25px;
+		float: left;
+		vertical-align: top;
+		padding: 15px;
+		transition: all .5s ease;
+		box-shadow: 0 1px 8px rgba(0,0,0,.15);
+		&:hover{
+			box-shadow: 0 1px 8px rgba(0,0,0,.55);
+		}
+		&__head{
+			@extend .clearfix;
+			margin-bottom: 20px;
+			vertical-align: middle;
+			min-height: 90px;
+		}
+		&__img{
+			float: left;
+			margin-right: 10px;
+		}
+		&__title{		
+			padding-top: 10px;
+			color:$c-bright-blue;
+			display: block;
+			width: auto;
+			text-decoration: underline;
+			
+		}
+
+		&__info{
+			color:$c-blue !important;
+		
+			&-lb{
+				float: left;
+				width: 90px;
+			}
+		}
+	}
+}
+/*==============/content================*/

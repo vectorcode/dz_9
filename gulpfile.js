@@ -64,7 +64,7 @@ gulp.task('minihtml', function() {
 
 //компелируем sass в css
 gulp.task('sass', function () {
-    gulp.src('app/scss/*.scss')
+    gulp.src('app/scss/main.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('app/css'));
 })
@@ -179,9 +179,9 @@ var log = function (error) {
 gulp.task( 'deploy', function() {
 
   var conn = ftp.create( {
-      host:     'dz1.kovalchuk.us',
-      user:     'kovaldn_test',
-      password: 'changed',
+      host:     'loftschool.pavelkondakov.ru',
+      user:     'atlant01_loftsch',
+      password: 'BlSRHzj7',
       parallel: 10,
       log: gutil.log
   } );
@@ -191,7 +191,7 @@ gulp.task( 'deploy', function() {
   ];
 
   return gulp.src(globs, { base: 'dist/', buffer: false })
-    .pipe(conn.dest( 'public_html/'));
+    .pipe(conn.dest( '/'));
 
 });
 

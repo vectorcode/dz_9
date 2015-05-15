@@ -107,7 +107,7 @@ li {
 /*======================================*/
 /*===============sitebar================*/
 .logo {
-  margin-bottom: 25px; }
+  margin-bottom: 18px; }
   .logo__link {
     display: block; }
   .logo__text {
@@ -127,7 +127,7 @@ li {
     font-weight: bold;
     font-family: "elektra_light_probold";
     font-size: 25px;
-    margin-bottom: 20px; }
+    margin-bottom: 16px; }
   .form__item {
     margin-bottom: 15px; }
     .form__item:last-child {
@@ -139,7 +139,7 @@ li {
     .form__item__inp {
       float: right;
       width: 130px;
-      padding: 7px; }
+      padding: 5px; }
     .form__item__select {
       float: right;
       margin-left: 10px;
@@ -174,7 +174,7 @@ li {
   margin-bottom: 30px; }
   .gallery__item {
     float: left;
-    margin: 0px 0px 10px 10px; }
+    margin: 0px 0px 6px 10px; }
 
 .contacts {
   padding: 15px 20px;
@@ -194,7 +194,6 @@ li {
         background-image: url("../img/ico_tel.png"); }
 
 /*===================/sitebar===========*/
-/*======================================*/
 /*===============content================*/
 .slider {
   position: relative;
@@ -206,7 +205,7 @@ li {
     height: 75px;
     background: rgba(0, 0, 0, 0.55);
     position: relative;
-    top: -75px;
+    top: -80px;
     padding: 15px 25px; }
     .slider__blk__info-title {
       font-size: 18px;
@@ -217,7 +216,7 @@ li {
       color: #fff; }
   .slider__btn__item {
     position: absolute;
-    top: 140px;
+    top: 106px;
     color: #00b9fe;
     font-family: "elektra_light_probold";
     text-align: center;
@@ -312,6 +311,8 @@ li {
         float: left;
         width: 90px; }
 
+/*==============/content================*/
+/*==============footer=================*/
 .footer {
   background: url("../img/bg-footer.jpg");
   min-width: 1040px;
@@ -324,10 +325,10 @@ li {
 
 .fbl__right {
   float: right;
-  padding-top: 70px; }
+  padding-top: 75px; }
 
 .fbl__center {
-  margin: 60px auto 0px 260px; }
+  margin: 64px auto 0px 188px; }
 
 .footerlnks {
   float: left;
@@ -361,4 +362,4 @@ li {
   .links__item__soc:first-child {
     margin-left: 0px; }
 
-/*===================/content===========*/
+/*==============/footer=================*/

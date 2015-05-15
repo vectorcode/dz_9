@@ -1,0 +1,140 @@
+/*======================================*/
+/*===============sitebar================*/
+.logo{
+	margin-bottom: 18px;
+	&__link{
+		display: block;
+	}
+
+	&__text{
+		text-indent: -9999px;
+		height: 0;
+	}
+}
+
+.control{
+	border: 1px solid $c-light-gray;
+	font-size: $f-sz-inp;
+}
+
+.form{
+	background: $c-gray;
+	color: $c-blue;
+	padding: 14px 12px;
+	margin-bottom: 14px;
+	
+	&__title{
+		font-weight: bold;
+		font-family: $font-el-b;
+		font-size: $f-sz-t;
+		margin-bottom: 16px;
+	}
+
+	&__item{
+		@extend .clearfix;
+		margin-bottom: 15px;
+		&:last-child{
+			margin-bottom: 0px;
+		}
+		&__lable{
+			float: left;
+			display: block;
+			padding-top: 7px;
+		}
+
+		&__inp{
+			@extend .control;
+			float: right;
+			width: 130px;
+			padding: 5px;
+			
+			
+		}
+
+		&__select{
+			@extend .control;
+			float: right;
+			margin-left: 10px;
+			cursor: pointer;
+			width: 50px;
+			height: 25px;
+		}
+		&__textar{
+			@extend .control;
+			width: 100%;
+			padding:12px 8px; 
+			resize:vertical;
+			min-height: 70px;
+		}
+		&__btn{
+			font: $f-sz-btn $font-el-b;
+			color: $c-white;
+			padding: 8px 5px;
+			min-width: 90px;
+			text-align: center;
+			background: $c-bright-blue;
+			border: none;
+			transition: background .3s ease;
+			cursor: pointer;
+
+			&:hover {
+				background: darken($c-bright-blue, 7%);
+			}
+
+			&-clear {
+				float: right;				
+				background: $c-light-gray;
+
+				&:hover {
+					background: darken($c-light-gray, 7%);
+				}
+			}
+
+
+						
+		}
+	}
+
+}
+
+.gallery{
+	@extend .clearfix;
+	margin-left: -10px;
+	margin-bottom: 30px;
+	&__item{
+		float: left;
+		margin: 0px 0px 6px 10px;
+	}
+}
+
+.contacts{
+	padding: 15px 20px;
+	background:$c-gray;
+	color: $c-blue;
+	
+	&__item{
+		padding-bottom: 15px;
+
+		&-link{
+			background-position: left top;
+			background-repeat: no-repeat;
+			display: block;
+			padding-left: 25px;
+			min-height: 22px;
+			
+			
+
+			&.map{
+				background-image: url('../img/ico_loc.png');
+
+			}
+			&.tel{
+				background-image: url('../img/ico_tel.png');
+
+			}
+		}
+	}
+}
+
+
+/*===================/sitebar===========*/
