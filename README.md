@@ -10,6 +10,6 @@
 5. gulp build - Собираем папку DIST (только после компиляции Jade)
 6. gulp server-dist - Проверка build 
 7. gulp minihtml - минификация html в папке dist
-8. gulp deploy - загружаем на сервер содержимое папки dist
+8. gulp deploy - загружаем на сервер содержимое папки dist (http://loftschool.pavelkondakov.ru/)
 
 
