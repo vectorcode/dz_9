@@ -2,12 +2,16 @@
 .content{
 
 }
+
 .slider{
 	position:relative;
 	width:740px;
 	height:300px;
-	overflow: hidden;
+	/* overflow: hidden; */
 	margin-bottom: 40px;
+
+
+
 	&__blk{
 
 
@@ -97,6 +101,40 @@
 	}
 
 }
+.bx-btn{
+	text-indent: inherit;
+	background-image: url('../img/slider/slider_controls.png');
+	background-repeat: no-repeat;
+	width: 70px;
+	height: 35px;
+	color: $c-blue;
+	font-family: $font-el-b;
+	text-decoration: none;
+	line-height: 36px;
+	top:27%;
+	font-size: 16px;
+}
+	
+.bx-prev{
+	@extend .bx-btn;
+	text-align: right;
+	padding-right: 10px;
+	background-position: 0 0;
+	left:10px;
+	&:hover{
+		background-position: 0 -165px;
+	}
+}
+.bx-next{
+	@extend .bx-btn;
+	text-align: left;
+	padding-left: 10px;
+	background-position: -130px 0;
+	right:10px;
+	&:hover{
+		background-position: -130px -165px;
+	}
+}
 .title {
 	font: $f-sz-t $font-em-r;
 	text-align: center;
@@ -156,14 +194,32 @@
 		}
 		&__img{
 			float: left;
-			margin-right: 10px;
+			width: 82px;
+			height: 90px;
+			position: relative;
+
+			img{
+				display: block;
+				position: absolute;
+				top:0;
+				right:0;
+				bottom:0;
+				left:0;
+				margin: auto;
+			}
 		}
 		&__title{		
-			padding-top: 10px;
-			color:$c-bright-blue;
+			/*padding-top: 10px;
 			display: block;
-			width: auto;
+			 width: auto; */
+			color:$c-bright-blue;
 			text-decoration: underline;
+
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+			width:115px;
+			height:90px;
 			
 		}
 

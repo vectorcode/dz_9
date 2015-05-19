@@ -78,12 +78,11 @@ a{
 img {
 	max-width: 100%;
 }
-.main{
-	font-size: $f-sz-n;
-	font-family: $font-el-r;
-}
+
 .wrapper{
 	@extend .clearfix;
+	font-size: $f-sz-n;
+	font-family: $font-el-r;
 	width: $wrapper_w;
 	margin: 0 auto;
 	position:relative;

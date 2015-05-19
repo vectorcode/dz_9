@@ -43,6 +43,7 @@
 
 .links{
 	&__item{
+		@extend .clearfix;
 		margin-bottom: 20px;
 		&__soc{
 			width:42px;

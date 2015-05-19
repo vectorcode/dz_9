@@ -38,11 +38,12 @@
 .gallery:before,
 .goods:before,
 .goods__item__head:before,
-.clearfix:after, .wrapper:after, .form__item:after, .gallery:after, .goods:after, .goods__item__head:after {
+.links__item:before,
+.clearfix:after, .wrapper:after, .form__item:after, .gallery:after, .goods:after, .goods__item__head:after, .links__item:after {
   content: " ";
   display: table; }
 
-.clearfix:after, .wrapper:after, .form__item:after, .gallery:after, .goods:after, .goods__item__head:after {
+.clearfix:after, .wrapper:after, .form__item:after, .gallery:after, .goods:after, .goods__item__head:after, .links__item:after {
   clear: both; }
 
 /* footer внизу страницы*/
@@ -77,11 +78,9 @@ a {
 img {
   max-width: 100%; }
 
-.main {
-  font-size: 14px;
-  font-family: "elektra_light_proregular"; }
-
 .wrapper {
+  font-size: 14px;
+  font-family: "elektra_light_proregular";
   width: 1000px;
   margin: 0 auto;
   position: relative;
@@ -150,7 +149,7 @@ li {
       width: 100%;
       padding: 12px 8px;
       resize: vertical;
-      min-height: 70px; }
+      min-height: 56px; }
     .form__item__btn {
       font: 15px "elektra_light_probold";
       color: #fff;
@@ -168,6 +167,42 @@ li {
         background: #dae1eb; }
         .form__item__btn-clear:hover {
           background: #c3cede; }
+
+.simpleselect {
+  float: right;
+  width: 50px;
+  height: 25px;
+  margin-left: 10px;
+  margin-bottom: 10px; }
+  .simpleselect .placeholder {
+    padding: 3px; }
+    .simpleselect .placeholder:after {
+      content: '';
+      width: 26px;
+      height: 24px;
+      background: url(../img/select-control.jpg) no-repeat 0 0;
+      position: absolute;
+      right: 0; }
+  .simpleselect .options {
+    display: block;
+    position: absolute;
+    left: -9999px;
+    width: 50px;
+    max-height: 200px;
+    overflow: auto; }
+    .simpleselect .options .option.active {
+      background: #00b9fe; }
+  .simpleselect.active .options {
+    position: static; }
+
+.jspVerticalBar {
+  width: 10px; }
+  .jspVerticalBar .jspCap {
+    background: #00b9fe; }
+  .jspVerticalBar .jspDrag {
+    background: #00b9fe; }
+  .jspVerticalBar .jspTrack {
+    background: #fff; }
 
 .gallery {
   margin-left: -10px;
@@ -199,7 +234,7 @@ li {
   position: relative;
   width: 740px;
   height: 300px;
-  overflow: hidden;
+  /* overflow: hidden; */
   margin-bottom: 40px; }
   .slider__blk__info {
     height: 75px;
@@ -252,6 +287,35 @@ li {
       .slider__btn__item.next:hover:before {
         border-left-color: #00b9fe; }
 
+.bx-btn, .bx-prev, .bx-next {
+  text-indent: inherit;
+  background-image: url("../img/slider/slider_controls.png");
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 35px;
+  color: #5c7b98;
+  font-family: "elektra_light_probold";
+  text-decoration: none;
+  line-height: 36px;
+  top: 27%;
+  font-size: 16px; }
+
+.bx-prev {
+  text-align: right;
+  padding-right: 10px;
+  background-position: 0 0;
+  left: 10px; }
+  .bx-prev:hover {
+    background-position: 0 -165px; }
+
+.bx-next {
+  text-align: left;
+  padding-left: 10px;
+  background-position: -130px 0;
+  right: 10px; }
+  .bx-next:hover {
+    background-position: -130px -165px; }
+
 .title {
   font: 25px "elektra_medium_proregular";
   text-align: center;
@@ -298,13 +362,28 @@ li {
       min-height: 90px; }
     .goods__item__img {
       float: left;
-      margin-right: 10px; }
+      width: 82px;
+      height: 90px;
+      position: relative; }
+      .goods__item__img img {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto; }
     .goods__item__title {
-      padding-top: 10px;
+      /*padding-top: 10px;
+			display: block;
+			 width: auto; */
       color: #00b9fe;
-      display: block;
-      width: auto;
-      text-decoration: underline; }
+      text-decoration: underline;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      width: 115px;
+      height: 90px; }
     .goods__item__info {
       color: #5c7b98 !important; }
       .goods__item__info-lb {

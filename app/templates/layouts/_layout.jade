@@ -5,23 +5,27 @@ html(lang="ru-RU")
 		<!--[if lt IE 7]>
 		<p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите</a> его.</p>
 		<![endif]-->
-		.main
-			.wrap
-				.wrapper
+		
+		.wrap
+			.wrapper
 
-					aside.sitebar
-						block aside
+				aside.sitebar
+					block aside
 
 				
-					article.content
-						block article
+				article.content
+					block article
 					
-			//footer
-			include ../common/_footer
+		//footer
+		include ../common/_footer
 
 		<!-- build:js js/vendor.js --> 
 		//bower:js
 		script(src='/bower/jquery/dist/jquery.js')
+		script(src='/bower/jQuery.SimpleSelect/jquery.simpleselect.min.js')
+		script(src='/bower/jscrollpane/script/jquery.jscrollpane.min.js')
+		script(src='/bower/jscrollpane/script/jquery.mousewheel.js')
+		script(src='/bower/bxslider/jquery.bxSlider.min.js')
 		//endbower  
 		<!-- endbuild --> 
 

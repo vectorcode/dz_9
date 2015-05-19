@@ -5,7 +5,8 @@
             li.goods__item
               a.goods__item__link(href="http://#{link}", target="_blank") 
                 .goods__item__head
-                  img.goods__item__img(src="img/tovar/#{src}", alt="")
+                  .goods__item__img
+                    img(src="img/tovar/#{src}", alt="")
                   .goods__item__title #{name}
                 .goods__item__info
                   .goods__item__info-lb Артикул
