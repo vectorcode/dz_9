@@ -4,6 +4,8 @@
     "jquery": "1.11",
     "normalize.css": "~3.0.3",
     "modernizer": "~2.8.2",
-    "bxslider": "*"
+    "bxslider": "*",
+    "jQuery.SimpleSelect": "https://github.com/pioul/jQuery.SimpleSelect.git#~2.0.0",
+    "jscrollpane": "~2.0.21"
   }
 }
